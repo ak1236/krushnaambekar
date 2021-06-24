@@ -17,7 +17,7 @@ ship.x=50;
 
 
 ground=createSprite(200,200,400,50);
-ground.addImage("ground",groundImage);
+ground.addImage("sea",groundImage);
 ground.x=ground.width/2;
 
 
