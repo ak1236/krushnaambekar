@@ -1,4 +1,4 @@
-var bow , arrow,  background;
+var bow , arrow,  scene;
 var bowImage, arrowImage, green_balloonImage, red_balloonImage, pink_balloonImage ,blue_balloonImage, backgroundImage;
 
 function preload(){
@@ -26,7 +26,7 @@ function setup() {
   bow = createSprite(380,220,20,50);
   bow.addImage(bowImg); 
   bow.scale = 1;
-  
+  score = 0;
 }
 
 function draw() {
@@ -54,11 +54,16 @@ function draw() {
   
   if (World.frameCount % 100 == 0) {
     if (select_balloon == 1) {
-      redBalloon();
-      blueBalloon();
+     redBalloon();
+    } else if (select_balloon == 2){
       greenBalloon();
+    } else if(select_balloon == 2);{
+      blueBalloon();
+    } else{
       pinkBalloon();
     }
+
+
   }
   
   drawSprites();
