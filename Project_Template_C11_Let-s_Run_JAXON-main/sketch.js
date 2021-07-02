@@ -5,8 +5,8 @@ var i;
 
 function preload(){
   //pre-load images
-  pathImg = loadImage("path.png");
-  boyImg = loadImage("Runner-1.png","runner-2.png");
+  pathImg = loadAnimation("path.png");
+  boyImg = loadAnimation("Runner-1.png","runner-2.png");
 }
 
 function setup(){
